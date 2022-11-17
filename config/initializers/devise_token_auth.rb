@@ -16,7 +16,7 @@ DeviseTokenAuth.setup do |config|
   # to 31. It is recommended to not use a value more than 10 in other environments.
   config.token_cost = Rails.env.test? ? 4 : 10
 
-  config.default_confirm_success_url = null
+  config.default_confirm_success_url = nil?
 
   # Sets the max number of concurrent devices per user, which is 10 by default.
   # After this limit is reached, the oldest tokens will be removed.
