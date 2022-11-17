@@ -1,0 +1,2 @@
+class Tudo < ApplicationRecord
+end
