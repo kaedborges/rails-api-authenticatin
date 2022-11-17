@@ -7,6 +7,9 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 Tudo.destroy_all
+User.destroy_all
+
+user1 = User.create!(email:"edvander@live.com", password:"123456", password_confirmation:"123456")
 
 statuses = %w[started backlog done]
 
@@ -17,4 +20,5 @@ statuses = %w[started backlog done]
               )
 end
 
+puts "Created User: #{user1.email}"
 puts "Created #{Tudo.count} Todo items"
